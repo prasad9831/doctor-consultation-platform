@@ -28,7 +28,9 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.use(response);
 //Passport initialize
 app.use(passport.initialize());
-
+app.get("/", (req, res) => {
+  res.send("Doctor Consultation Backend is Running 🚀");
+});
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/doctor', require('./routes/doctor'));
