@@ -29,7 +29,7 @@ app.use(response);
 //Passport initialize
 app.use(passport.initialize());
 app.get("/", (req, res) => {
-  res.send("Doctor Consultation Backend is Running 🚀");
+  res.send("Doctor Consultation Backend is Running Perfect 🚀");
 });
 
 app.use('/api/auth', require('./routes/auth'));
