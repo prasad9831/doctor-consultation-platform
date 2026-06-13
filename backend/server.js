@@ -17,7 +17,10 @@ const app = express();
 app.use(helmet());
 app.use(morgan('dev'));
 app.use(cors({
-    origin : (process.env.ALLOWS_ORIGINS || '').split(',').map(s => s.trim()).filter(Boolean) || '*',
+    origin : [
+      "http://localhost:3000",
+      "https://doctor-consultation-platform-three.vercel.app",
+    ],
     credentials : true
 }));
 app.use(bodyParser.json());
