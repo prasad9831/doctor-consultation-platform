@@ -23,12 +23,3 @@ jobs:
       - name: Build Docker Images
         run: docker compose build
 
-      - name: Start Containers
-        run: docker compose up -d
-
-      - name: Show Running Containers
-        run: docker ps
-
-      - name: Stop Containers
-        run: docker compose down
-
