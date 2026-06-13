@@ -39,7 +39,7 @@ const LandingHero = () => {
 
         {/* Subtext */}
         <p className="mt-6 text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
-          Online primary care that's affordable with or without insurance.
+          Online Primary Care that's affordable with or without insurance.
           Quality healthcare, accessible anytime, anywhere.
         </p>
 
